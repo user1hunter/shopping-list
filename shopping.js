@@ -84,8 +84,9 @@ addToShoppingList(items, "hamburgers", 16)
 addToShoppingList(items, "chicken", 14)
 addToShoppingList(items, "frozen pizza", 12)
 
-console.log(items)
 
 for  (const item of items) {
-    console.log(`The price of ${item.name} is $${item.price}.`)
+    if (item.price > 8) {
+        console.log(`The price of ${item.name} is $${item.price}.`)
+    }
 }
